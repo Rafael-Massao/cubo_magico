@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rubik's Cube 3D Pro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="sidebar">
+            <h2>Comandos do Cubo</h2>
+            
+            <div class="mini-cube-box">
+                <p class="mini-title">Orientação das Faces</p>
+                <div class="mini-scene">
+                    <div class="mini-cube" id="mini-cube">
+                        <div class="mini-face m-top">U</div>
+                        <div class="mini-face m-bottom">D</div>
+                        <div class="mini-face m-front">F</div>
+                        <div class="mini-face m-back">B</div>
+                        <div class="mini-face m-left">L</div>
+                        <div class="mini-face m-right">R</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="control-grid">
+                <button class="btn" id="btn-u">U (Horário)</button>
+                <button class="btn btn-prime" id="btn-u-prime">U'</button>
+
+                <button class="btn" id="btn-d">D (Horário)</button>
+                <button class="btn btn-prime" id="btn-d-prime">D'</button>
+
+                <button class="btn" id="btn-f">F (Horário)</button>
+                <button class="btn btn-prime" id="btn-f-prime">F'</button>
+
+                <button class="btn" id="btn-b">B (Horário)</button>
+                <button class="btn btn-prime" id="btn-b-prime">B'</button>
+
+                <button class="btn" id="btn-l">L (Horário)</button>
+                <button class="btn btn-prime" id="btn-l-prime">L'</button>
+
+                <button class="btn" id="btn-r">R (Horário)</button>
+                <button class="btn btn-prime" id="btn-r-prime">R'</button>
+            </div>
+
+            <div class="legend-box">
+                <h3>🧭 Guia de Eixos</h3>
+                <p><span class="dot red"></span> Eixo X (Vermelho)</p>
+                <p><span class="dot green"></span> Eixo Y (Verde)</p>
+                <p><span class="dot blue"></span> Eixo Z (Azul)</p>
+                <small style="color:var(--text-dim);">SHIFT + Tecla faz o movimento inverso (').</small>
+            </div>
+        </div>
+
+        <div class="viewer-area">
+            <div class="compass-container">
+                <div class="compass" id="compass">
+                    <div class="axis axis-x">X</div>
+                    <div class="axis axis-y">Y</div>
+                    <div class="axis axis-z">Z</div>
+                </div>
+            </div>
+
+            <div class="scene">
+                <div class="cube" id="cube"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
